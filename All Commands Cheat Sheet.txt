@@ -1,0 +1,44 @@
+================================================::GitHub::================================================
+
+Clone a specific branch: git clone -b Development-Web https://github.com/Wellify-Inc/wellify.git
+
+Fetch all branches from a remote GitHub repository: git fetch --all
+
+See all the branches (both local and remote): git branch -a
+
+Push your changes to the dev branch on the remote repository: git push origin dev
+
+Push dev branch code to uat branch: 
+    - git checkout dev
+    - git pull origin dev
+    - git checkout uat || git checkout -b uat (if branch doesn't exist)
+    - git merge dev
+    - git push origin uat
+
+To change the origin URL: git remote set-url origin <new-repo-url>
+Display the current remote URLs associated with your repository: git remote -v
+
+look for the user.name and user. email fields in the output: git config --list
+Set user name: git config --global user.name "harshitknp"
+Set email: git config --global user.email "harhsitk2@chetu.com"
+
+
+
+============================================::Ubuntu(Apache)::============================================
+
+Delete a folder along with all its files and subdirectories: rm -r /path/to/directory
+Open and write in a file: nano /path/to/file_name
+Read file: cat file_name
+Copy abc file to xyz: cp abc xyz
+
+
+
+
+
+
+
+
+
+
+
+
