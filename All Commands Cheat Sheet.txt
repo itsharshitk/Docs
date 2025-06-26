@@ -15,10 +15,13 @@ Push dev branch code to uat branch:
     - git merge dev
     - git push origin uat
 
+DELETE local branch: git branch -d your-feature-branch-name (Use -D to force Delete)
+DELETE remote branch: git push origin --delete your-feature-branch-name
+
 To change the origin URL: git remote set-url origin <new-repo-url>
 Display the current remote URLs associated with your repository: git remote -v
 
-look for the user.name and user. email fields in the output: git config --list
+look for the user.name and user.email fields in the output: git config --list
 Set user name: git config --global user.name "harshitknp"
 Set email: git config --global user.email "harhsitk2@chetu.com"
 
