@@ -59,3 +59,47 @@ Switching from PHP to Go (Golang) is a great decision, especially if you're look
 
 ### Conclusion
 Transitioning to Go will take time and effort, but with a structured approach, you can successfully make the switch and position yourself for higher-paying opportunities. Good luck!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   var req struct {
+		Title   string `json:"title" binding:"required"`
+	}
+	err := c.ShouldBindJSON(&req)
+
+   
+   var req model.Request
+	err := c.ShouldBindJSON(&req)
+
+
+   post := model.Post{
+		UserId:  c.GetUint("userId"),
+		Title:   req.Title,
+	}
+	result := db.DB.Create(&post)
+
+
+   var cmt model.Comment
+	cmt.PostId = uint(postId)
+	cmt.CommentText = comment.CommentText
+	result := db.DB.Create(&cmt)
+
+
+   newUser := model.User{
+		Email:    req.Email,
+		Password: req.Password,
+	}
+	err := db.DB.Create(&newUser)
