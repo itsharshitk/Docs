@@ -21,7 +21,7 @@ DELETE remote branch: git push origin --delete your-feature-branch-name
 To change the origin URL: git remote set-url origin <new-repo-url>
 Display the current remote URLs associated with your repository: git remote -v
 
-look for the user.name and user.email fields in the output: git config --list
+look for the user.name and user. email fields in the output: git config --list
 Set user name: git config --global user.name "harshitknp"
 Set email: git config --global user.email "harhsitk2@chetu.com"
 
@@ -33,11 +33,10 @@ Delete a folder along with all its files and subdirectories: rm -r /path/to/dire
 Open and write in a file: nano /path/to/file_name
 Read file: cat file_name
 Copy abc file to xyz: cp abc xyz
-
-
-
-
-
+Move all non-hidden files to its parent directory: mv * ../
+Zip all files in current directory: zip -r archive-name.zip *
+Unzip all files at current directory: unzip archive-name.zip (add "-d /path" to specify folder)
+To list all users: compgen -u
 
 
 
